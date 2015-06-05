@@ -1,0 +1,109 @@
+.grid {
+	overflow: hidden;
+	width: 100%;
+}
+
+.grid > :nth-child(n) {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 1/1 grid */
+.grid > :only-child {
+  width: 100%
+}
+
+/* 1/2 grid */
+.grid > :nth-child(1):nth-last-child(2), .grid > :nth-child(1):nth-last-child(2) ~ :nth-child(n) {
+  width: calc(100% / 2)
+}
+
+/* 1/3 grid */
+.grid > :nth-child(1):nth-last-child(3), .grid > :nth-child(1):nth-last-child(3) ~ :nth-child(n) {
+  width: calc(100% / 3)
+}
+
+/* 1/4 grid */
+.grid > :nth-child(1):nth-last-child(4), .grid > :nth-child(1):nth-last-child(4) ~ :nth-child(n) {
+  width: calc(100% / 4)
+}
+
+/* 1/5 grid */
+.grid > :nth-child(1):nth-last-child(5), .grid > :nth-child(1):nth-last-child(5) ~ :nth-child(n) {
+  width: calc(100% / 5)
+}
+
+/* 1/6 grid */
+.grid > :nth-child(1):nth-last-child(6), .grid > :nth-child(1):nth-last-child(6) ~ :nth-child(n) {
+  width: calc(100% / 6)
+}
+
+/* 1/7 grid */
+.grid > :nth-child(1):nth-last-child(7), .grid > :nth-child(1):nth-last-child(7) ~ :nth-child(n) {
+  width: calc(100% / 7)
+}
+
+/* 1/8 grid */
+.grid > :nth-child(1):nth-last-child(8), .grid > :nth-child(1):nth-last-child(8) ~ :nth-child(n) {
+  width: calc(100% / 8)
+}
+
+/* 1/9 grid */
+.grid > :nth-child(1):nth-last-child(9), .grid > :nth-child(1):nth-last-child(9) ~ :nth-child(n) {
+  width: calc(100% / 9)
+}
+
+/* 1/10 grid */
+.grid > :nth-child(1):nth-last-child(10), .grid > :nth-child(1):nth-last-child(10) ~ :nth-child(n) {
+  width: calc(100% / 10)
+}
+
+/*
+	Portion overrrides
+*/
+.grid > .grid-1-2 {
+  width: calc(100% / 2) !important
+}
+.grid > .grid-1-3 {
+  width: calc(100% / 3) !important
+}
+.grid > .grid-1-4 {
+  width: calc(100% / 4) !important
+}
+.grid > .grid-1-5 {
+  width: calc(100% / 5) !important
+}
+.grid > .grid-2-3 {
+  width: calc(200% / 3) !important
+}
+
+.grid > .grid-3-4 {
+  width: 75% !important
+}
+.grid > .grid-2-5 {
+  width: 40% !important
+}
+.grid > .grid-3-5 {
+  width: 60% !important
+}
+.grid > .grid-4-5 {
+  width: 80% !important
+}
+
+/*
+	Media queries - expand to your liking
+*/
+@media only screen and (max-width: 940px) {
+	.grid > :nth-child(n) {
+	  width: 50% !important
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.grid > :nth-child(n) {
+	  width: 100% !important
+	}
+}
