@@ -15,27 +15,28 @@ To use *EasyGrid* in your project, include it in your HTML:
 ## Examples
 
 Example base grid markup:
-
+```html
     <div class="grid">
       <div>1/2</div>
       <aside>1/2</aside>
     </div>
-  
+```  
 <br />
 
 Example using override classes:
-
+```html
     <div class="grid">
       <div class="1-3">1/3</div>
       <div class="2-3">2/3</div>
     </div>
-
+```
 <br />
   
 Example with a form (oh yes):
-
+```
     <form class="grid" method="get" action="">
       <input type="text" name="name" placeholder="1/3" />
       <input type="email" name="email" placeholder="1/3" />
       <input type="submit" placeholder="1/3" />
     </form>
+```
