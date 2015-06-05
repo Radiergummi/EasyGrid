@@ -26,8 +26,8 @@ Example base grid markup:
 Example using override classes:
 ```html
     <div class="grid">
-      <div class="1-3">1/3</div>
-      <div class="2-3">2/3</div>
+      <div class="grid-1-3">1/3</div>
+      <div class="grid-2-3">2/3</div>
     </div>
 ```
 <br />
