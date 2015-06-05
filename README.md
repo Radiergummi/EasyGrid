@@ -4,7 +4,7 @@ An intuitive, flexible CSS grid with minimal footprint
 ## Usage
 This grid system requires a parent element with the class `grid` applied to it. It will then treat all children as grid items (no asterisk selector used).  
 The grid will have as many columns as it has child elements, but you can override the columns (think of the `colspan` attribute). Media queries are in place to resize the rows for smaller screens, but you should expand these based on your use case.  
-Demo is available on [JSFiddle]()
+Demo is available on [JSFiddle](http://jsfiddle.net/0ocxpxte/)
 
 To use *EasyGrid* in your project, include it in your HTML:  
 
