@@ -37,6 +37,6 @@ Example with a form (oh yes):
     <form class="grid" method="get" action="">
       <input type="text" name="name" placeholder="1/3" />
       <input type="email" name="email" placeholder="1/3" />
-      <input type="submit" placeholder="1/3" />
+      <input type="submit" value="1/3" />
     </form>
 ```
